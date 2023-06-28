@@ -1,69 +1,122 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Your Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <style>
+    /* CSS code for your CV website */
+    /* Add your own styling here */
+
     body {
       font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
+      background-color: #f2f2f2;
     }
-    
-    header {
-      background-color: #00a8e8;
+
+    .header {
+      background-color: #333;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
-    
-    header h1 {
+
+    h1 {
       margin: 0;
+    }
+
+    .info-section {
+      background-color: #fff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .name {
       font-size: 24px;
-    }
-    
-    nav {
-      background-color: #00ced1;
-      color: #fff;
-      padding: 10px;
+      font-weight: bold;
       text-align: center;
     }
-    
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-    
-    section {
-      padding: 20px;
-    }
-    
-    footer {
-      background-color: #00a8e8;
-      color: #fff;
-      padding: 20px;
+
+    .profession {
+      font-size: 18px;
       text-align: center;
+      margin-bottom: 20px;
     }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info span {
+      margin-right: 10px;
+    }
+
+    .contact-info i {
+      margin-right: 5px;
+    }
+
+    .animated-element {
+      animation: move 2s infinite;
+    }
+
+    @keyframes move {
+      0% { transform: translateX(0); }
+      50% { transform: translateX(20px); }
+      100% { transform: translateX(0); }
+    }
+
+    /* Add more styles as needed */
+
   </style>
 </head>
 <body>
-  <header>
-    <h1>Your Website</h1>
+  <header class="header">
+    <h1>faganaliyev.com</h1>
   </header>
-  
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-  </nav>
-  
-  <section>
-    <h2>Welcome to Your Website</h2>
-    <p>This is a sample section. You can modify it with your own content.</p>
+
+  <section class="info-section">
+    <h2 class="name"Fagan</h2>
+    <div class="contact-info">
+      <span><i class="fas fa-phone"></i>+994504832312</span>
+      <span><i class="far fa-envelope"></i>faganaliyev027@gmail.com</span>
+      <a href="https://www.instagram.com/fagan.027/?next=%2F"><span><i class="fab fa-instagram"></i>fagan.027</span></a>
+    </div>
   </section>
-  
-  <footer>
-    &copy; 2023 Your Website. All rights reserved.
-  </footer>
+
+  <section class="info-section">
+    <h2>About Me</h2>
+    <p>Hi, I'm Fagan, a passionate Data Scientist with expertise in Python programming for data science. I have a strong background in handling and analyzing large datasets using Python libraries such as NumPy, Pandas, and Scikit-learn. I am experienced in implementing machine learning algorithms for predictive modeling and have a good understanding of statistical concepts for data analysis.</p>
+  </section>
+
+  <section class="info-section">
+    <h2>What is Data Science?</h2>
+    <p>Data Science is an interdisciplinary field that combines scientific methods, processes, algorithms, and systems to extract knowledge and insights from structured and unstructured data. It involves various techniques and tools, including statistical analysis, machine learning, data mining, and data visualization. Data Scientists work with large and complex datasets to uncover patterns, make predictions, and provide actionable insights to drive data-informed decision-making in various domains.</p>
+  </section>
+
+  <section class="info-section">
+    <h2>Data Visualization</h2>
+    <p>I am proficient in data visualization using Python libraries such as Matplotlib, Seaborn, and Plotly. I also have experience with Tableau, a powerful data visualization tool that allows for creating interactive and dynamic visualizations. With Tableau, I can create visually stunning dashboards and reports to effectively communicate data insights to stakeholders.</p>
+  </section>
+
+  <section class="info-section">
+    <h2>Machine Learning</h2>
+    <p>I possess a solid understanding of various machine learning algorithms and techniques, including supervised and unsupervised learning. I have practical experience in model development, evaluation, and deployment, and I am adept at using popular machine learning frameworks such as scikit-learn and TensorFlow.</p>
+  </section>
+
+  <section class="info-section">
+    <h2>Web Development</h2>
+    <p>In addition to my data science skills, I have a basic understanding of front-end web development technologies such as HTML,CSS.</p>
+  </section>
+
+  <!-- Add more sections and content as needed -->
+
+  <script>
+    // JavaScript code for animated elements
+    var animatedElements = document.getElementsByClassName('animated-element');
+    for (var i = 0; i < animatedElements.length; i++) {
+      animatedElements[i].style.animationDelay = i * 0.1 + 's';
+    }
+  </script>
 </body>
 </html>
+
