@@ -1,6 +1,6 @@
 <h1 align="center">Hi 👋, I'm Fagan Aliyev</h1>
 <h3 align="center">A passionate Data Scientist</h3>
-<img align="right" alt="coding" width="400" src="https://gifdb.com/coding"></img>
+<img align="right" alt="coding" width="400" src="https://github.com/rudrabarad/Gifs"></img>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=faganaliyevvvv&label=Profile%20views&color=0e75b6&style=flat" alt="faganaliyevvvv" /> </p>
 
 - 🌱 I’m currently learning **Data Science**
