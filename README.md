@@ -1,6 +1,7 @@
 <h1 align="center">Hi 👋, I'm Fagan Aliyev</h1>
 <h3 align="center">A passionate Data Scientist</h3>
-<img align="right" alt="coding" width="400" src="https://github.com/rudrabarad/Gifs"></img>
+<img align="right" alt="coding" width="400" src="![image](https://github.com/FaganAliyevvvv/Simple-Portofolio/assets/137539362/8a2fbf06-2e22-4785-89b8-2a4308888157)
+"></img>
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=faganaliyevvvv&label=Profile%20views&color=0e75b6&style=flat" alt="faganaliyevvvv" /> </p>
 
 - 🌱 I’m currently learning **Data Science**
