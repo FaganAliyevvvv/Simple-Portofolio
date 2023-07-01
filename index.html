@@ -6,17 +6,45 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+
+    body.dark-mode {
+      background-color: #333;
+      color: #fff;
     }
 
     .header {
-      background-color: #333;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #222;
       color: #fff;
       padding: 20px;
-      text-align: center;
+      margin: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
 
-    h1 {
+    .header.dark-mode {
+      background-color: #222;
+      color: #ddd;
+    }
+
+    .header h1 {
       margin: 0;
+    }
+
+    #darkModeButton {
+      background-color: transparent;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #darkModeButton i {
+      margin-right: 5px;
     }
 
     .info-section {
@@ -26,6 +54,36 @@
       border-radius: 10px;
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     }
+
+    .info-section.dark-mode {
+      background-color: #222;
+      color: #ddd;
+    }
+
+    .profession {
+      font-size: 18px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-info span {
+      margin-right: 10px;
+      color: #333;
+    }
+
+    .contact-info span.dark-mode {
+      color: #ddd;
+    }
+
+    .contact-info i {
+      margin-right: 5px;
+    }
+
     .info-section:hover {
         transform: scale(1);
         -webkit-transform: scale(1.04);
@@ -65,6 +123,7 @@
 <body>
   <header class="header">
     <h1>faganaliyev.online</h1>
+    <button id="darkModeButton" onclick="toggleDarkMode()"><i class="fas fa-moon"></i> Dark Mode</button>
   </header>
 
   <section class="info-section">
@@ -98,13 +157,24 @@
 
   <section class="info-section">
     <h2>Web Development</h2>
-    <p>In addition to my data science skills, I have a basic understanding of front-end web development technologies such as HTML,CSS.</p>
+    <p>In addition to my data science skills, I have a basic understanding of front-end web development technologies such as HTML, CSS.</p>
   </section>
 
   <script>
-    var animatedElements = document.getElementsByClassName('animated-element');
-    for (var i = 0; i < animatedElements.length; i++) {
-      animatedElements[i].style.animationDelay = i * 0.1 + 's';
+    function toggleDarkMode() {
+      var body = document.body;
+      var infoSections = document.querySelectorAll('.info-section');
+      var contactInfo = document.querySelectorAll('.contact-info span');
+
+      body.classList.toggle('dark-mode');
+
+      infoSections.forEach(function(element) {
+        element.classList.toggle('dark-mode');
+      });
+
+      contactInfo.forEach(function(element) {
+        element.classList.toggle('dark-mode');
+      });
     }
   </script>
 </body>
