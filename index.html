@@ -50,6 +50,16 @@
       background-color: #222;
       color: #ddd;
     }
+    .hobby-section{
+      background-color: #222;
+      color: #ddd;
+    }
+
+    .hobby-section.dark-mode {
+      background-color: #222;
+      color: #ddd;}
+    
+
 
 
 
@@ -691,6 +701,7 @@
         transform: scale(1);
         -webkit-transform: scale(1.04);
     }
+
   </style>
 </head>
 <body>
@@ -802,7 +813,7 @@
         </section>
             <section class="hobby-section">
                 <p>Learning</p>
-                <img src="https://i.gifer.com/YMXq.gif"
+                <img src="https://media.tenor.com/VdIqLsIJPH8AAAAd/the-simpsons-homer-simpson.gif"
         height="200"
         width="200"></img>
             </section>
@@ -824,12 +835,17 @@
       var body = document.body;
       var infoSections = document.querySelectorAll('.info-section');
       var contactInfo = document.querySelectorAll('.contact-info span');
-
+      var hobbydark = document.querySelectorAll('.hobby-section');
       body.classList.toggle('dark-mode');
 
       infoSections.forEach(function(element) {
         element.classList.toggle('dark-mode');
       });
+
+      hobbydark.forEach(function(element) {
+        element.classList.toggle('dark-mode');
+      });
+
 
       contactInfo.forEach(function(element) {
         element.classList.toggle('dark-mode');
