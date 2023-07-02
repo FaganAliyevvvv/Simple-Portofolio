@@ -51,11 +51,7 @@
       color: #ddd;
     }
 
-    .profession {
-      font-size: 18px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
+
 
     .contact-info {
       text-align: center;
@@ -81,24 +77,6 @@
     }
 
 
-    .profession {
-      font-size: 18px;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .contact-info {
-      text-align: center;
-      margin-bottom: 20px;
-    }
-
-    .contact-info span {
-      margin-right: 10px;
-    }
-
-    .contact-info i {
-      margin-right: 5px;
-    }
 
     .animated-element {
       animation: move 2s infinite;
@@ -698,6 +676,21 @@
   a {
    color: inherit;
 }
+.hobby-section {
+      height: 300px;
+      width: 200px;
+      background-color: #fff;
+      padding: 20px;
+      margin: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      float: left;
+
+    }
+    .hobby-section:hover {
+        transform: scale(1);
+        -webkit-transform: scale(1.04);
+    }
   </style>
 </head>
 <body>
@@ -790,11 +783,43 @@
     <h2>Web Development</h2>
     <p>In addition to my data science skills, I have a basic understanding of front-end web development technologies such as HTML, CSS.</p>
   </section>
-   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1640074295067923"
-     crossorigin="anonymous"></script>
 
+  <section class="info-section">
+    <h1 align="center">My hobbies:</h1>
+  </section>
+  <div>
+    <section class="hobby-section">
+<p>Coding</p>
+        <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNG1nZ2lxdDNsY3JyMm56cGJ5dTQ5OHc5dndseTV0Z2pwMGNxajluNSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/xT9IgzoKnwFNmISR8I/giphy.gif"
+        height="200"
+        width="200"></img>
+    </section>
+        <section class="hobby-section">
+            <p>Gaming</p>
+            <img src="https://media.tenor.com/3klZkDif0nsAAAAd/gaming-gif.gif"
+        height="200"
+        width="200"></img>
+        </section>
+            <section class="hobby-section">
+                <p>Learning</p>
+                <img src="https://i.gifer.com/YMXq.gif"
+        height="200"
+        width="200"></img>
+            </section>
+                <section class="hobby-section">
+                    <p>Watching Movies</p>
+                    <img src="https://media.tenor.com/87epF9S1_woAAAAM/spongebobsquarepants-tv.gif"
+        height="200"
+        width="200"></img>
+                </section>
+                    <section class="hobby-section">
+                        <p>Sport</p>
+                        <img src="https://media.tenor.com/evaYTuO6z2UAAAAC/ronnie-coleman.gif"
+        height="200"
+        width="200"></img>
+                    </section>
+                                            </div>
   <script>
-    
     function toggleDarkMode() {
       var body = document.body;
       var infoSections = document.querySelectorAll('.info-section');
