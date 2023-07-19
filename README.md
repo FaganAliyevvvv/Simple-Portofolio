@@ -1,2 +1,1 @@
-<h1 bgcolor='blue'>Check out my website:</h1>
-www.faganaliyev.online
+<h1>Check out my website:</h1><a>www.faganaliyev.online</a>
